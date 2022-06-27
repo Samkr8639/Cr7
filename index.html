@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Josefin Sans,sans-serif;
+    }
+    body{
+        background-color: #bed1fd;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+.card{
+    position: relative;
+    height: 500px;
+    width: 400px;
+    background-color: #fff;
+    transition: 0.5s;
+    border-radius: 2%;
+    box-shadow:10px 14px 20px #5f7ec7;
+}
+
+    .face{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+    }
+    .face1{
+        text-align: center;
+        padding: 20px;
+        color: #073668;
+        transition: 0.5s;
+        box-shadow: inset 15px 15px 15px #e8e0e0;
+        border-radius: 2%;
+    
+    }
+    .face1 h2{
+       
+        text-transform: uppercase;
+        margin-top: 100px;
+    }
+    .face p{
+        margin-top: 30px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+    .face a{
+        margin-top:30px ;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #073668;
+        border: 2px solid #073668;
+        border-radius: 6px;
+        text-transform: capitalize;
+        font-weight: bold;
+        transition: 0.3s;
+    }
+    .face2{
+        background-color: #073668;
+        transition: 0.5s;
+        border-radius: 2%;
+    }
+.face2 h2{
+    font-size: 110px;
+    font-family:  Courier, monospace;
+    color: #fff;
+    transition: 0.5s;
+}
+.card:hover .face2{
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    top: 50px;
+    left: 39%;
+    background-color: #fff;
+    border:1px solid #073668 ;
+}
+.card:hover .face2 h2{
+    font-size: 30px;
+    color: #073668;
+}
+a:hover{
+    background-color: #073668;
+    color: #fff;
+}
+
+    </style>
+<body>
+    <div class="card">
+        <div class="face face1">
+        <h2>CRISTIANO RONALDO</h2>
+        <P>CRISTIANO RONALDO is a portuguese professional footballer who plays as a forward for 
+           Premier League club Manchester United and captains the Portugal national team.
+        </P>
+            <a href="https://www.instagram.com/cristiano/?hl=en"> <i class="fab fa-instagram"> Instagram </i> </a>
+    </div>
+    <div class="face face2">
+        <h2>CR7</h2>
+    </div>
+    </div>
+</body>
+</html>
